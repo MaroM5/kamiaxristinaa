@@ -128,3 +128,21 @@ body {
     transform: scaleX(0.85);
   }
 }
+
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(-500px) rotate(720deg);
+  }
+}
+
+.confetti {
+  width: 10px;
+  height: 10px;
+  background-color: #f00; /* Adjust color as needed */
+  position: absolute;
+  animation: confetti 1s linear infinite;
+}
