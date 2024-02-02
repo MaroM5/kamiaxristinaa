@@ -4,13 +4,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #4d7b93;
+  background-color: #fae1dd;
 }
 
 .container {
   position: relative;
 }
-.cards {
+.valentines {
   position: relative;
   top: 50px;
   cursor: pointer;
@@ -69,10 +69,40 @@ body {
   color: #003049;
 }
 
+.heart {
+  background-color: #d62828;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 110px;
+  left: 105px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
 
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #d62828;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
 .front {
   position: absolute;
-  border-right: 180px solid #d896ff;
+  border-right: 180px solid #f4978e;
   border-top: 95px solid transparent;
   border-bottom: 100px solid transparent;
   left: 120px;
@@ -85,7 +115,7 @@ body {
 .front:before {
   position: absolute;
   content: "";
-  border-left: 300px solid #efbbff;
+  border-left: 300px solid #f8ad9d;
   border-top: 195px solid transparent;
   left: -120px;
   top: -95px;
